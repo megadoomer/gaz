@@ -1,0 +1,30 @@
+{
+  "name": "alice-stdlib",
+  "version": "0.1.0",
+  "description": "Standard set of libraries and modules for spirit shop applications",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "keywords": [
+    "stdlib",
+    "core",
+    "packages",
+    "modules"
+  ],
+  "author": "Eric Satterwhite",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.1.3",
+    "moment": "^2.9.0",
+    "mout": "^0.11.0",
+    "prime": "^0.4.2",
+    "prime-util": "^0.5.0",
+    "qs": "^2.3.3",
+    "urljoin": "^0.1.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
