@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Standard set of libraries and modules for spirit shop applications",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://esatterwhite@bitbucket.org/team-umbrella/alice-stdlib.git"
+  },
   "scripts": {
     "test": "mocha ./test"
   },
