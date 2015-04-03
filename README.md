@@ -1,6 +1,6 @@
 # Standard Lib ( `core` )
 
-[ ![Codeship Status for team-umbrella/hive-stdlib](https://codeship.com/projects/a714b5f0-bba3-0132-941d-7ae602eb521b/status?branch=master)](https://codeship.com/projects/72238)
+[ ![Codeship Status for team-umbrella/hive-stdlib](https://codeship.com/projects/52de7100-bbd3-0132-e235-7ab97aac1fb6/status?branch=master)](https://codeship.com/projects/72288)
 
 The standard lib package supplies a large set of helper and utility code to normalize implementation code within the spiritshop application suite. It provides
 
