@@ -2,7 +2,7 @@
 /*globals module,process,require,exports,__dirname,__filename */
 /**
  * @author Eric Satterwhite
- * @module alice-stdlib/string/capitalize
+ * @module hive-stdlib/string/capitalize
  * @since 0.1.0
  */
       

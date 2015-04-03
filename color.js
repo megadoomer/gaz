@@ -3,13 +3,13 @@
  'use strict';
  /**
   * ### Provides color functionality
-  * @module alice-stdlib/color
+  * @module hive-stdlib/color
   * @author Eric Satterwhite
   * @since 0.1.0
-  * @requires alice-stdlib/class
-  * @requires alice-stdlib/typeOf
-  * @requires alice-stdlib/number
-  * @requires alice-stdlib/function
+  * @requires hive-stdlib/class
+  * @requires hive-stdlib/typeOf
+  * @requires hive-stdlib/number
+  * @requires hive-stdlib/function
   * @example var c = new Color('723F61', 'hex');
 c.cmyk() // 'cmyk(0.0, 0.4, 0.1, 0.6)'
 c.cmyk(true) // {c:0.0, m:0.4, y:0.1, k:0.6}
@@ -31,7 +31,7 @@ c.cmyk(true, true) // [ 0.1, 0.4, 0.1, 0.6]
 
 
 colors = {
-	aliceblue: "#f0f8ff", antiquewhite: "#faebd7", aqua: "#00ffff", aquamarine: "#7fffd4",
+	hiveblue: "#f0f8ff", antiquewhite: "#faebd7", aqua: "#00ffff", aquamarine: "#7fffd4",
 	 azure: "#f0ffff", beige: "#f5f5dc", bisque: "#ffe4c4", black: "#000000", blanchedalmond: "#ffebcd",
 	 blue: "#0000ff", blueviolet: "#8a2be2", brown: "#a52a2a", burlywood: "#deb887", cadetblue: "#5f9ea0",
 	 chartreuse: "#7fff00", chocolate: "#d2691e", coral: "#ff7f50", cornflowerblue: "#6495ed",
@@ -203,13 +203,13 @@ parsers = {
 /**
  * ## The main Color Class
  * @constructor
- * @class module:alice-stdlib/color.Color
+ * @class module:hive-stdlib/color.Color
  * @param {String|Color|Array|Number} Color A color representation
  * @param {String} type The type of format of the color space ( rgb, hex, hsb )
  * @example var x = new color.Color([66,66,66],'rgb') 
 })
  */
-exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype */{
+exports.Color = Color = new Class(/* @lends hive-stdlib/color.Color.prototype */{
 	 inherits: Array
 	 ,constructor: function( color, type ){
 		switch( typeOf( color ) ){
@@ -255,7 +255,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 	 * returns the current color representation in the RGB color space as an array
 	 * @method rgb
 	 * @instance
-	 * @memberof alice-stdlibe/color.Color
+	 * @memberof hive-stdlibe/color.Color
 	 * @param {Boolean} [full=false] return values as an object {r:r, g:g, b:b} rather than string
 	 * @param {Boolean} [flat=false] return values in an array [r, g, b]
 	 * @return {ObjectString|Array} An array containg the color valuse [r, g, b]
@@ -269,7 +269,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 	/**
 	 * returns the current color representation in the HSB color space as an array
 	 * @param {Boolean} asArray if true, will be returned as an array
-	 * @method module:alice-stdlib/color.Color#hsb
+	 * @method module:hive-stdlib/color.Color#hsb
 	 * @param {Boolean} [full=false] return values as an object {h:h, s:s, b:b} rather than string
 	 * @param {Boolean} [flat=false] return values in an array [h, s, b]
 	 * @return {Object|String|Array} The HSB values of the current color
@@ -308,7 +308,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * returns the current color representation in the HEX color space as an array
-	 * @method module:alice-stdlib/color.Color#hex
+	 * @method module:hive-stdlib/color.Color#hex
 	 * @param {Boolean} [full=false] return values as an object {r:r, g:g, b:b} rather than string
 	 * @param {Boolean} [flat=false] return values in an array [r, g, b]
 	 * @return {Object|String|Array} An array containg the color valuse [RR, GG, BB, AA]
@@ -329,7 +329,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * Returns the HSL values of the current Color
-	 * @method module:alice-stdlib/color.Color#hsl
+	 * @method module:hive-stdlib/color.Color#hsl
 	 * @param {Boolean} [full=false] return values as an object {h:h, s:s, l:l} rather than string
 	 * @param {Boolean} [flat=false] return values in an array [h, s, l]
 	 * @return {Object|Array|String} hsl values of the color 
@@ -377,7 +377,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * returns CMYK values of the current color
-	 * @method module:alice-stdlib/color.Color#cmyc
+	 * @method module:hive-stdlib/color.Color#cmyc
 	 * @param {Boolean} [full=false] return values as an object {c:c, m:m, y:y, k:k} rather than string
 	 * @param {Boolean} [flat=false] return values in an array [c, m, y, k]
 	 * @return {Object|Array|String} cmyk values of the color 
@@ -405,7 +405,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * Determines if the color is considered a bright color
-	 * @method module:alice-stdlib/color.Color#isLight
+	 * @method module:hive-stdlib/color.Color#isLight
 	 * @return {Boolean} returns true if the colors brightness value is greater than 50
 	 */
 	,isLight: function( thrsh ){
@@ -414,7 +414,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * Determines if the color is considered a dark color
-	 * @method module:alice-stdlib/color.Color#isDark
+	 * @method module:hive-stdlib/color.Color#isDark
 	 * @return {Boolean} returns true if the colors brightness value is leass than 50
 	 */
 	,isDark: function(){
@@ -423,7 +423,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
 
 	/**
 	 * Determines if the color is considered a bright color
-	 * @method module:alice-stdlib/color.Color#contrast
+	 * @method module:hive-stdlib/color.Color#contrast
 	 * @param {Color|String} light the color to be used if the original color is dark
 	 * @param {Color|String} dark the color to be used if the original color is light
 	 * @return   {Color} dark if the passed in color is light, will return the dark color and vice versa
@@ -497,7 +497,7 @@ exports.Color = Color = new Class(/* @lends alice-stdlib/color.Color.prototype *
  * @method module:color.Color.lookupColor
  * @param {String} color The name of the Color you want.
  * @returns {String} The colors HEX Code
- * @example var color = require('alice-stdlib/color'
+ * @example var color = require('hive-stdlib/color'
 var Color = color.Color
 Color.lookupColor("fuchsia") // #ff00ff
  */
@@ -522,7 +522,7 @@ Color.defineColors = overloadSetter(function( name, hex ){
  * returns hex code of a predefined color
  * @param {array} rgb An RBG String to convert into a Color
  * @returns {Color} A new Color Instance
- * @example var color = require('alice-stdlib/color')
+ * @example var color = require('hive-stdlib/color')
 console.log( color.rgb("rgb(122,122,122)" ).repr() ) // <Color: #7a7a7a>
 })
  */

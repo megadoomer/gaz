@@ -3,7 +3,7 @@
 'use strict';
 /**
  * Number utilities for the standard lib
- * @module alice-stdlib/number
+ * @module hive-stdlib/number
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/number
@@ -20,7 +20,7 @@ var mnumber = require('mout/number')
  * @param {Number} min The lower bounds of the limit
  * @param {Number} max The upper bounds of the limit
  * @returns {Number} will return num if it is with the the range, other wise it will return either the min or max
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.limit( 100, 0, 10 ) // 10
 number.limit( 8, 0, 10 ) // 8
 })
@@ -35,7 +35,7 @@ exports.limit = function(num, min, max ){
  * @param {Number} num The number to round
  * @param {Number} precision The number of decimal places to round the number to
  * @returns {Number} The resultant number
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.round( 3.14588930520, 2 ) // 3.15
  */
 exports.round = function( num, precision ){
@@ -66,7 +66,7 @@ exports.times = function( num, fn, bind ){
  * @param {Number} The lower bounds of the random number
  * @param {Number} The upper bounds of the random number
  * @return {Number} A random Number
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.random( 0, 1000 ) // 845
  */
 exports.random = function( min, max ){
@@ -79,7 +79,7 @@ exports.random = function( min, max ){
  * Attempts to generate a number from a passed in string
  * @param {String} The string to pase
  * @returns {Number} A number if one was created, otherwise it will return null
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.from( "12.43" ) // 12.43
  */
 exports.from = function( item ){
@@ -102,7 +102,7 @@ exports.from = function( item ){
 	<li>prefix - string to be appended</li>
  </ul>
  * @returns {String} A string formated as specified
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 console.log( number.format( 100, {  decimals:2, group:",", decimal:"."} ) ) // 100.00
  */
 exports.format = function( num, options ){
@@ -229,7 +229,7 @@ exports.format = function( num, options ){
  * @param {Number} num The number to format
  * @param {Number} decimals The number of decimal palces to honor
  * @return {String}
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.formatCurrency( 50.115318568 ) // $50.10
  */
 exports.formatCurrency = function( num, decimals ){
@@ -241,7 +241,7 @@ exports.formatCurrency = function( num, decimals ){
  * @param {Number} num The number to format
  * @param {Number} decimals The number of decimal palces to honor
  * @return {String}
- * @example number = require('alice-stdlib/number')
+ * @example number = require('hive-stdlib/number')
 number.formatPercentage( 50.115318568, 1 ) // 50.1%
  */
 exports.formatPercentage = function( num, decimals ){

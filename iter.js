@@ -3,13 +3,13 @@
 'use strict';
 /**
  * Tools for dealing with complex iteration patters.
- * @module alice-stdlib/iter
+ * @module hive-stdlib/iter
  * @author Eric satterwhite
  * @since 0.1.0
  * @requires events
- * @requires alice-stdlib/class
- * @requires alice-stdlib/lang
- * @requires alice-stdlib/class/options
+ * @requires hive-stdlib/class
+ * @requires hive-stdlib/lang
+ * @requires hive-stdlib/class/options
  */
 
 var Class   = require('./class')

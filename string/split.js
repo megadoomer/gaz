@@ -3,7 +3,7 @@
 /**
  * Splits a string on a specified separator and returns a limited subset of pieces
  * @author Eric Satterwhite
- * @module alice-stdlib/string/split
+ * @module hive-stdlib/string/split
  * @since 0.1.0
  */
         

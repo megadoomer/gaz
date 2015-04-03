@@ -3,7 +3,7 @@
 'use strict';
 /**
  * a better kind of typeof
- * @module alice-stdlib/typeOf
+ * @module hive-stdlib/typeOf
  * @author Eric Satterwhite
  * @since 0.1.0
  */

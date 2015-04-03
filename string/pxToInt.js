@@ -3,7 +3,7 @@
 /**
  * Converts a string in the format of 12px and converts it into an integer
  * @author Eric Satterwhite
- * @module alice-stdlib/string/pxToInt
+ * @module hive-stdlib/string/pxToInt
  * @since 0.1.0
  */
         

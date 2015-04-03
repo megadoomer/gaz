@@ -3,10 +3,10 @@
 'use strict';
 /**
  * Module for consistent and smart logical operations and comparisons
- * @module alice-stdlib/operator
+ * @module hive-stdlib/operator
  * @author Eric Satterwhite
  * @since 0.2.0
- * requires alice-stdlib/compare
+ * requires hive-stdlib/compare
  */
 var compare = require('./compare')
 /**

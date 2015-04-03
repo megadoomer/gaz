@@ -1,16 +1,16 @@
 {
-  "name": "alice-stdlib",
+  "name": "hive-stdlib",
   "version": "0.1.0",
   "description": "Standard set of libraries and modules for spirit shop applications",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://esatterwhite@bitbucket.org/team-umbrella/alice-stdlib.git"
+    "url": "https://esatterwhite@bitbucket.org/team-umbrella/hive-stdlib.git"
   },
   "scripts": {
     "test": "mocha ./test"
   },
-  "bugs":"https://bitbucket.org/team-umbrella/alice-stdlib/issues",
+  "bugs":"https://bitbucket.org/team-umbrella/hive-stdlib/issues",
   "engines" : {
     "node" : ">=0.10 <= 0.12"
   },

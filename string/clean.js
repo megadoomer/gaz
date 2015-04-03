@@ -2,7 +2,7 @@
 'use strict';
 /**
  * @author Eric Satterwhite
- * @module alice-stdlib/string/clean
+ * @module hive-stdlib/string/clean
  */
  var trim = require('mout/string/trim')
 /**

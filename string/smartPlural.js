@@ -2,7 +2,7 @@
 /**
  * Attempts to infer the plural form of any word
  * @author Eric Satterwhite
- * @module alice-stdlib/string/smartPlural
+ * @module hive-stdlib/string/smartPlural
  * @since 0.1,0
  */
 /**

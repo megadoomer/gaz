@@ -3,8 +3,8 @@
 /**
  * Module working with dates and complex date math
  * @author Eric Satterwhite
- * @module alice-stdlib/date
- * @requires alice-stdlib/lang
+ * @module hive-stdlib/date
+ * @requires hive-stdlib/lang
  * @requires mout/date
  */
 var DateMethods

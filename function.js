@@ -3,17 +3,17 @@
 'use strict';
 /**
  * Standard utilities for dealing with functions
- * @module alice-stdlib/function
+ * @module hive-stdlib/function
  * @author Eric satterwhite
  * @since 0.1.0
- * @requires alice-stdlib/lang
- * @requires alice-stdlib/array
+ * @requires hive-stdlib/lang
+ * @requires hive-stdlib/array
  */
 
 var mfn = require( './function' )
 var toArray = require('./lang').toArray
 var append  = require('./array').append
-var debug = require('debug')('alice:stdlib:function')
+var debug = require('debug')('hive:stdlib:function')
 var _wrapDumbFunction
 	,enumerables
 	,i
@@ -331,7 +331,7 @@ exports.times         = mfn.times
  * allowing you to adjust arguments, run code before and after, and
  * conditionally execute the original function
  * @function
- * @see module:alice-stdlib/function.partial
+ * @see module:hive-stdlib/function.partial
  * @param {Function} fn function to execute 
  * @param {Function} wrapper the function to be passed into `fn`
  * @return {Function}

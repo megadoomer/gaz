@@ -2,7 +2,7 @@
 'use strict';
 /**
  * general javascript helpers and short cuts
- * @module alice-stdlib/lang
+ * @module hive-stdlib/lang
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/lang

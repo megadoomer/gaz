@@ -3,11 +3,11 @@
 'use strict';
 /**
  * Module for performing comparisons of complex objects
- * @module alice-stdlib/compare
+ * @module hive-stdlib/compare
  * @author Eric Satterwhite
  * @since 0.2.0
- * @requires alice-stdlib/class
- * @requires alice-stdlibe/typeOf
+ * @requires hive-stdlib/class
+ * @requires hive-stdlibe/typeOf
  */
 
 var Class = require( './class' )
@@ -31,7 +31,7 @@ var typeOf
  * Place to hold comapitor function pairs
 >>>>>>> colossus/WHIT-580-module-documentation
  * @inner
- * @class module:alice-stdlib/compare.Registry
+ * @class module:hive-stdlib/compare.Registry
  */
 Registry = new Class({
 	constructor:function( ){

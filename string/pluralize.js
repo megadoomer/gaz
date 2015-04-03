@@ -4,7 +4,7 @@
  * Based on a count, will return either a specified singluar or plural version of a word. 
  * Will return the singular version if the count is 1.
  * @author Eric Satterwhite
- * @module alice-stdlib/string/pluralize
+ * @module hive-stdlib/string/pluralize
  * @since 0.1.0
  */
         

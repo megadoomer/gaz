@@ -2,10 +2,10 @@
 "use strict";
 /**
  * Provides a stable mechanisome for creating and clearing time outs
- * @module module:alice-stdlib/class/timers
+ * @module module:hive-stdlib/class/timers
  * @since 0.1.0
  * @author Eric Satterwhite
- * @requires module:alice-stdlib/class
+ * @requires module:hive-stdlib/class
  * @requires debug
 **/
 var  Class       = require( './index' )  
@@ -21,7 +21,7 @@ file_info = {
 
 /**
  * @constructor
- * @alias module:alice-stdlib/class/timers
+ * @alias module:hive-stdlib/class/timers
  * @param {TYPE} NAME DESCRIPTION
  * @example var x = new NAME.Timers({});
  */
@@ -29,7 +29,7 @@ Timers = new Class({
 	$timers: {}
 	/**
 	 * This does someTimers
-	 * @method module:alice-stdlib/class/timers#setTimer
+	 * @method module:hive-stdlib/class/timers#setTimer
 	 * @param {TYPE} name DESCRPTION
 	 * @param {TYPE} name DESCRIPTION
 	 * @returns {TYPE} DESCRIPTION
@@ -40,7 +40,7 @@ Timers = new Class({
 
 	/**
 	 * sets a time for a unique ID
-	 * @method module:alice-stdlib/class/timers#setTimer
+	 * @method module:hive-stdlib/class/timers#setTimer
 	 * @param {String} id The store the time under
 	 * @param {Number} time the lengthtime in milliseconds delay callback execution 
 	 * @callback {Timers~setCallback} callback The callback method to execute
@@ -58,7 +58,7 @@ Timers = new Class({
 	/**
 	 * Removes a timer reference by ID
 	 * @chainable
-	 * @method module:alice-stdlib/class/timers#clearTimer
+	 * @method module:hive-stdlib/class/timers#clearTimer
 	 * @param {String} id The id of the timer to clean
 	 * @return {Timer} The current Timer instance
 	 **/

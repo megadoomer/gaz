@@ -2,7 +2,7 @@
 'use strict';
 /**
  * Utilities for working with and parsing querystrings
- * @module alice-stdlib/querysting
+ * @module hive-stdlib/querysting
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/querystring

@@ -3,7 +3,7 @@
 'use strict';
 /**
  * methods for dealing specifically with time
- * @module alice-stdlib/time
+ * @module hive-stdlib/time
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/time
@@ -14,7 +14,7 @@ var mtime = require( 'mout/time' )
 
 /**
  * An object describing a point in time broken into logical units
- * @typedef {Object} module:alice-stdlib/time~TimeObject
+ * @typedef {Object} module:hive-stdlib/time~TimeObject
  * @property {Number} miliseconds number of miliseconds 
  * @property {Number} seconds number of seconds
  * @property {Number} minutes number of minutes
@@ -25,7 +25,7 @@ var mtime = require( 'mout/time' )
 /**
  * convert on time into a different unit of measure
  * @function convert
- * @memberof module:alice-stdlib/time
+ * @memberof module:hive-stdlib/time
  * @param {Number} time The amount of time to convert
  * @param {String} source The unit of measure the time is in ( ms, s, m, h, d, w)
  * @param {String} [destination=ms] The unit of measure to return
@@ -38,7 +38,7 @@ exports.convert      = mtime.convert
 /**
  * return the current time in miliseconds
  * @function now
- * @memberof module:alice-stdlib/time
+ * @memberof module:hive-stdlib/time
  * @returns {Number} current time
  * @example time.now() // 1415412304203
  **/
@@ -47,9 +47,9 @@ exports.now          = mtime.now
 /**
  * Parse a current time stamp into an object
  * @function parseMs
- * @memberof module:alice-stdlib/time
+ * @memberof module:hive-stdlib/time
  * @param {Number} time time in miliseconds
- * @return {module:alice-stdlib/time~TimeObject} TimeObject
+ * @return {module:hive-stdlib/time~TimeObject} TimeObject
  * @example time.parseMs( time.now )  // { milliseconds: 277, seconds: 38, minutes: 2, hours: 2, days: 16382 }
  **/
 exports.parseMs      = mtime.parseMs
@@ -57,7 +57,7 @@ exports.parseMs      = mtime.parseMs
 /**
  * converts a timestamp into time string H:MM:SS
  * @function toTimeString
- * @memberof module:alice-stdlib/time
+ * @memberof module:hive-stdlib/time
  * @param {Number} time a duration of time in miliseconds
  * @example time.toTimeString( 36000 ) // '00:36'
  **/

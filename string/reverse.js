@@ -4,7 +4,7 @@
 /**
  * Attempts to reverse the characters of a string
  * @author Eric Satterwhite
- * @module alice-stdlib/string/reverse
+ * @module hive-stdlib/string/reverse
  * @since 0.1.0
  */
 

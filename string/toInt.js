@@ -2,7 +2,7 @@
 'use strict';
 /**
  * @author Eric Satterwhite
- * @module alice-stdlib/string/toInt
+ * @module hive-stdlib/string/toInt
  * @since 0.1.0
  */
 

@@ -1,6 +1,6 @@
 # Standard Lib ( `core` )
 
-[ ![Codeship Status for team-umbrella/alice-stdlib](https://codeship.com/projects/a714b5f0-bba3-0132-941d-7ae602eb521b/status?branch=master)](https://codeship.com/projects/72238)
+[ ![Codeship Status for team-umbrella/hive-stdlib](https://codeship.com/projects/a714b5f0-bba3-0132-941d-7ae602eb521b/status?branch=master)](https://codeship.com/projects/72238)
 
 The standard lib package supplies a large set of helper and utility code to normalize implementation code within the spiritshop application suite. It provides
 
@@ -21,10 +21,10 @@ The standard lib package supplies a large set of helper and utility code to norm
 
 Magement commands are away to abstract common and repetitive tasks into configurable, executable and interactive scripts. The managment harness uses the [seeli](https://www.npmjs.org/package/seeli) module as the bases for defining and registering commands.
 
-Any package under the `packages` directory can ship an arbitrary number of commands that is specific to it's functionality domain. Modules found in a top level folder called `commands` will be automatically registered when the `alice` CLI tool is executed and usable. For example, the standard lib folder structure looks like such:
+Any package under the `packages` directory can ship an arbitrary number of commands that is specific to it's functionality domain. Modules found in a top level folder called `commands` will be automatically registered when the `hive` CLI tool is executed and usable. For example, the standard lib folder structure looks like such:
 
 ```sh
-alice-stdlib
+hive-stdlib
 └── commands
     ├── repl.js
     └── version.js
@@ -98,10 +98,10 @@ module.exports = Hello;
 now you will have a fully functional hello command with help and an interactive walk through
 
 ```
-alice help world
-alice world --help
-alice world --interactive
-alice world --name=Mark --name=Sally --no-excited
+hive help world
+hive world --help
+hive world --interactive
+hive world --name=Mark --name=Sally --no-excited
 ```
 
 

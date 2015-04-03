@@ -2,23 +2,23 @@
 'use strict';
 /**
  * Standard set of javascript tools, helpers and utilities
- * @module alice-stdlib
+ * @module hive-stdlib
  * @author Eric Satterwhite
  * @since 0.1.0
- * @requires alice-stdlib/exception
- * @requires alice-stdlib/class
- * @requires alice-stdlib/number
- * @requires alice-stdlib/iter
- * @requires alice-stdlib/function
- * @requires alice-stdlib/time
- * @requires alice-stdlib/date
- * @requires alice-stdlib/string
- * @requires alice-stdlib/typeOf
- * @requires alice-stdlib/lang
- * @requires alice-stdlib/object
- * @requires alice-stdlib/array
- * @requires alice-stdlib/querystring
- * @requires alice-stdlib/collection
+ * @requires hive-stdlib/exception
+ * @requires hive-stdlib/class
+ * @requires hive-stdlib/number
+ * @requires hive-stdlib/iter
+ * @requires hive-stdlib/function
+ * @requires hive-stdlib/time
+ * @requires hive-stdlib/date
+ * @requires hive-stdlib/string
+ * @requires hive-stdlib/typeOf
+ * @requires hive-stdlib/lang
+ * @requires hive-stdlib/object
+ * @requires hive-stdlib/array
+ * @requires hive-stdlib/querystring
+ * @requires hive-stdlib/collection
  * @requires mout/math
  */
 
