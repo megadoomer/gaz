@@ -78,7 +78,6 @@ describe('itemgetter',function() {
 	describe("Multiple Indecies", function(  ){
 
 		it('should look up values for multiple indecies', function(){
-			console.log( obj1 )
 			var getter = operator.itemgetter(0,2,8);
 			var results = getter( obj1 )
 			assert.strictEqual( results[0], "H")

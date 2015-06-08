@@ -35,7 +35,7 @@ describe( 'String', function(){
 	describe('stripHtmlTags', function(){
 		var str  =
 				'<div>'+
-					'<script>var x = \'hello world\';console.log( x );</script>'+
+					'<script>var x = \'hello world\';function(){return x};</script>'+
 					'<span> this is some text & the number 5</span>'+
 				'</div>';
 
