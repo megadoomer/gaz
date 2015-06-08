@@ -36,7 +36,6 @@
   },
   "bundledDependencies":[
     "mout",
-    "moment",
     "urljoin",
     "qs",
     "prime",
