@@ -8,7 +8,7 @@
     "url": "https://esatterwhite@bitbucket.org/team-umbrella/hive-stdlib.git"
   },
   "scripts": {
-    "test": "mocha ./test"
+    "test": "node scripts/test.js"
   },
   "bugs":"https://bitbucket.org/team-umbrella/hive-stdlib/issues",
   "engines" : {
