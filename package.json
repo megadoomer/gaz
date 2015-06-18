@@ -1,16 +1,16 @@
 {
-  "name": "hive-stdlib",
+  "name": "gaz",
   "version": "0.1.0",
-  "description": "Standard set of libraries and modules for spirit shop applications",
+  "description": "Standard set of libraries and modules for megadoomer applications",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://esatterwhite@bitbucket.org/team-umbrella/hive-stdlib.git"
+    "url": "https://esatterwhite@bitbucket.org/megadoomer/gaz.git"
   },
   "scripts": {
     "test": "node scripts/test.js"
   },
-  "bugs":"https://bitbucket.org/team-umbrella/hive-stdlib/issues",
+  "bugs":"https://bitbucket.org/megadoomer/gaz/issues",
   "engines" : {
     "node" : ">=0.10 <= 0.12"
   },
