@@ -180,7 +180,7 @@ Loader = new Class({
 	}
 
 	,remap: function remap( loaded ){
-		return attempt( require.bind( require, loaded.path ) )
+		return attempt( require.bind( require, loaded.path, loaded.name ) )
 	}
 	/**
 	 * The method used to flatten out the loader data structure to a single array
