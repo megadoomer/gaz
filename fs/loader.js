@@ -40,8 +40,7 @@ var debug           = require( 'debug' )('gaz:fs:loader')   // debuging instance
 	, applications
 	;
 
-
-applications = toArray( conf.get('hive:applications') );
+applications = toArray( conf.get('megadoomer:applications') );
 
 /**
  * And object mapping arrays of files to their associated package names
