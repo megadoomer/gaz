@@ -8,8 +8,9 @@
  * @requires debug
  * @requires path
  * @requires fs
- * @requires fs
- * @requires hive-conf
+ * @requires glob
+ * @requires async
+ * @requires keef
  * @requires gaz/class
  * @requires gaz/class/options
  * @requires gaz/class/parent
@@ -21,6 +22,7 @@
 var debug           = require( 'debug' )('gaz:fs:loader')   // debuging instance
 	, path          = require( 'path' )                          // node path module
 	, fs            = require( 'fs' )                            // node fs module
+	, async         = require( 'async' )                            // node async module
 	, glob          = require('glob')
 	, minimatch     = require('glob/node_modules/minimatch')
 	, conf          = require( 'keef' )                    // hive configuration loader
