@@ -38,14 +38,17 @@ var debug           = require( 'debug' )('gaz:fs:loader')   // debuging instance
 	, toModule      = require('../string').toModule
 	, Loader                                                     // Base Loader class
 	, applications
+    , pkg
 	;
 
-applications = toArray( conf.get('megadoomer:applications') );
+
+pkg = conf.get('pkg:name') || 'megadoomer';
+applications = toArray( conf.get( pkg + ':applications') );
 
 /**
  * And object mapping arrays of files to their associated package names
  * @typedef {Object} module:gaz/fs/loader~files
- * @property {Function} flatt reduces the object into a single array
+ * @property {Function} flat reduces the object into a single array
  */
 
 /**
@@ -94,7 +97,7 @@ Loader = new Class({
 
 		if( !apps.length ){
 			// find specified
-			apps =  toArray( conf.get('hive:applications') )
+			apps =  apps.concat( applications )
 			apps.push(  process.cwd() )
 		}
 
