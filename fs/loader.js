@@ -98,7 +98,12 @@ Loader = new Class({
 		if( !apps.length ){
 			// find specified
 			apps =  apps.concat( applications )
-			apps.push(  process.cwd() )
+			try{
+				require.resolve( process.cwd() );
+				apps.push(  process.cwd() );
+			} catch( err ){
+				// if there is no index.js, just omit it from apps
+			}
 		}
 
 		debug('loading %s', apps.join(', ') );
