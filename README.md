@@ -1,7 +1,6 @@
 # Standard Lib ( `core` )
 
-[ ![Codeship Status for team-umbrella/gaz](https://codeship.com/projects/52de7100-bbd3-0132-e235-7ab97aac1fb6/status?branch=master)](https://codeship.com/projects/72288)
-
+[ ![Codeship Status for megadoomer/gaz](https://codeship.com/projects/52de7100-bbd3-0132-e235-7ab97aac1fb6/status?branch=master)](https://codeship.com/projects/72288)
 The standard lib package supplies a large set of helper and utility code to normalize implementation code within the spiritshop application suite. It provides
 
 * Class & Configuration
