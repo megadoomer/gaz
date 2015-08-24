@@ -3,10 +3,10 @@
 'use strict';
 /**
  * Module for consistent and smart logical operations and comparisons
- * @module hive-stdlib/operator
+ * @module gaz/operator
  * @author Eric Satterwhite
  * @since 0.2.0
- * requires hive-stdlib/compare
+ * requires gaz/compare
  */
 var compare = require('./compare')
 /**

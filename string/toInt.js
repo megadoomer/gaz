@@ -2,7 +2,7 @@
 'use strict';
 /**
  * @author Eric Satterwhite
- * @module hive-stdlib/string/toInt
+ * @module gaz/string/toInt
  * @since 0.1.0
  */
 

@@ -1,6 +1,6 @@
 # Standard Lib ( `core` )
 
-[ ![Codeship Status for team-umbrella/hive-stdlib](https://codeship.com/projects/52de7100-bbd3-0132-e235-7ab97aac1fb6/status?branch=master)](https://codeship.com/projects/72288)
+[ ![Codeship Status for team-umbrella/gaz](https://codeship.com/projects/52de7100-bbd3-0132-e235-7ab97aac1fb6/status?branch=master)](https://codeship.com/projects/72288)
 
 The standard lib package supplies a large set of helper and utility code to normalize implementation code within the spiritshop application suite. It provides
 
@@ -24,7 +24,7 @@ Magement commands are away to abstract common and repetitive tasks into configur
 Any package under the `packages` directory can ship an arbitrary number of commands that is specific to it's functionality domain. Modules found in a top level folder called `commands` will be automatically registered when the `hive` CLI tool is executed and usable. For example, the standard lib folder structure looks like such:
 
 ```sh
-hive-stdlib
+gaz
 └── commands
     ├── repl.js
     └── version.js

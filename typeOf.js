@@ -3,7 +3,7 @@
 'use strict';
 /**
  * a better kind of typeof
- * @module hive-stdlib/typeOf
+ * @module gaz/typeOf
  * @author Eric Satterwhite
  * @since 0.1.0
  */

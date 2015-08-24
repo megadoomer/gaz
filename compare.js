@@ -3,11 +3,11 @@
 'use strict';
 /**
  * Module for performing comparisons of complex objects
- * @module hive-stdlib/compare
+ * @module gaz/compare
  * @author Eric Satterwhite
  * @since 0.2.0
- * @requires hive-stdlib/class
- * @requires hive-stdlibe/typeOf
+ * @requires gaz/class
+ * @requires gaze/typeOf
  */
 
 var Class = require( './class' )
@@ -27,7 +27,7 @@ var typeOf
 /**
  * Place to hold comapitor function pairs
  * @inner
- * @class module:hive-stdlib/compare.Registry
+ * @class module:gaz/compare.Registry
  */
 Registry = new Class({
 	constructor:function( ){

@@ -4,7 +4,7 @@
 /**
  * Object based utilities. Mostly a pass through for mout/object
  * This is hear for consistency
- * @module hive-stdlib/object
+ * @module gaz/object
  * @author Eric Satterwhite
  * @since 0.0.1
  * @requires mout/object

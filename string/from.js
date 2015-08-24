@@ -1,7 +1,7 @@
 /*jshint laxcomma: true, smarttabs: true, node: true*/
 'use strict';
 /**
- * @module hive-stdlib/string/from
+ * @module gaz/string/from
  * @author Eric Satterwhite
  * @since 0.1.0
  */

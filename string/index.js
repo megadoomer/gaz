@@ -3,22 +3,22 @@
 'use strict';
 /**
  * String utilities
- * @module hive-stdlib/string
+ * @module gaz/string
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/string
- * @requires hive-stdlib/string/clean
- * @requires hive-stdlib/string/capitalize
- * @requires hive-stdlib/string/from
- * @requires hive-stdlib/string/id
- * @requires hive-stdlib/string/pluralize
- * @requires hive-stdlib/string/pxToInt
- * @requires hive-stdlib/string/randomKey
- * @requires hive-stdlib/string/reverse
- * @requires hive-stdlib/string/smartPlural
- * @requires hive-stdlib/string/split
- * @requires hive-stdlib/string/toFloat
- * @requires hive-stdlib/string/toInt
+ * @requires gaz/string/clean
+ * @requires gaz/string/capitalize
+ * @requires gaz/string/from
+ * @requires gaz/string/id
+ * @requires gaz/string/pluralize
+ * @requires gaz/string/pxToInt
+ * @requires gaz/string/randomKey
+ * @requires gaz/string/reverse
+ * @requires gaz/string/smartPlural
+ * @requires gaz/string/split
+ * @requires gaz/string/toFloat
+ * @requires gaz/string/toInt
  */
 
 var mstring = require('mout/string')
@@ -90,7 +90,7 @@ exports.crop                = mstring.crop
 
 /**
  * @function 
- * @see module:hive-stdlib/string/from
+ * @see module:gaz/string/from
  **/
 exports.from                = require('./from')
 /**
@@ -136,7 +136,7 @@ exports.escapeRegExp        = mstring.escapeRegExp
  * Unicode escape characters
  * It will only escape non-printable ASCII chars unless `shouldEscapePrintable` is set to `true`.
  * @function
- * @see module:hive-stdlib/string#unescapeUnicode
+ * @see module:gaz/string#unescapeUnicode
  * @param {String} input The input string to escape
  * @param {Boolean} [escapeprintable=true] if false will not be escaped
  * @return {String} sequence of escaped unicode chars
@@ -151,9 +151,9 @@ exports.escapeUnicode       = mstring.escapeUnicode
  * Replaces spaces with hyphens, split camelCase text, remove non-word chars,
  * remove accents and convert to lower case.
  * @function
- * @see module:hive-stdlib/string#slugify
- * @see module:hive-stdlib/string#underscore
- * @see module:hive-stdlib/string#unhyphenate
+ * @see module:gaz/string#slugify
+ * @see module:gaz/string#underscore
+ * @see module:gaz/string#unhyphenate
  * @param {String} str The string to camelCase
  * @return {String}
  * @example
@@ -273,7 +273,7 @@ exports.normalizeLineBreaks = mstring.normalizeLineBreaks
 /**
  * camelCase + UPPERCASE first char
  * @function
- * @see module:hive-stdlib/string#camelCase
+ * @see module:gaz/string#camelCase
  * @param {String} input an input string to pascal case
  * @return {String} a pascal cased version of the input string
  * @example
@@ -284,7 +284,7 @@ string.pascalCase('lorem ipsum dolor'); // "LoremIpsumDolor"
 exports.pascalCase          = mstring.pascalCase
 /**
  * @function 
- * @see module:hive-stdlib/string/pluralize
+ * @see module:gaz/string/pluralize
  **/
 exports.pluralize           = require('./pluralize')
 
@@ -300,17 +300,17 @@ exports.properCase          = mstring.properCase
 
 /**
  * @function 
- * @see module:hive-stdlib/string/pxToInt
+ * @see module:gaz/string/pxToInt
  **/
 exports.pxToInt             = require('./pxToInt')
 /**
  * @function 
- * @see module:hive-stdlib/string/randomKey
+ * @see module:gaz/string/randomKey
  **/
 exports.randomKey           = require('./randomKey')
 /**
  * @function 
- * @see module:hive-stdlib/string/reverse
+ * @see module:gaz/string/reverse
  **/
 exports.reverse             = require('./reverse')
 
@@ -386,7 +386,7 @@ exports.replaceAccents      = mstring.replaceAccents
 /**
  * Pad string with `char` if its' length is smaller than `minLen`
  * @function
- * @see module:hive-stdlib/string#lpad
+ * @see module:gaz/string#lpad
  * @param {String} input The input string to pad
  * @param {Number} min The minimum length to pad a string up to
  * @param {String} [char=' '] The character to use a fill
@@ -406,8 +406,8 @@ exports.rpad                = mstring.rpad
  * Remove Characters from the end of a string
  * `chars` is an array of chars to remove from the end of the string. If
  * `chars` is not specified, Unicode whitespace chars will be used instead.
- * @see module:hive-stdlib/string#trim
- * @see module:hive-stdlib/string#ltrim
+ * @see module:gaz/string#trim
+ * @see module:gaz/string#ltrim
  * @function
  * @param {String} input  the input string to trim
  * @param {String[]} [chars] Arrat of characters to remove from the end of the input string
@@ -436,8 +436,8 @@ exports.sentenceCase        = mstring.sentenceCase
  * with the delimeter. The default delimeter is a hyphen.
  * **Note** that this does not split camelCase text.
  * @function
- * @see module:hive-stdlib/string#hphenate
- * @see module:hive-stdlib/string#underscore
+ * @see module:gaz/string#hphenate
+ * @see module:gaz/string#underscore
  * @param {String} str the string to convert
  * @param {String} [delimeter=-] The character used to replace spaces with
  * @return {String} slug a new slug
@@ -450,12 +450,12 @@ exports.slugify             = mstring.slugify
 
 /**
  * @function 
- * @see module:hive-stdlib/string/smartPlural
+ * @see module:gaz/string/smartPlural
  **/
 exports.smartPlural         = require('./smartPlural')
 /**
  * @function 
- * @see module:hive-stdlib/string/split
+ * @see module:gaz/string/split
  **/
 exports.split               = require('./split')
 
@@ -484,13 +484,13 @@ exports.stripHtmlTags       = mstring.stripHtmlTags
 
 /**
  * @function 
- * @see module:hive-stdlib/string/toFloat
+ * @see module:gaz/string/toFloat
  **/
 exports.toFloat             = require('./toFloat')
 
 /**
  * @function 
- * @see module:hive-stdlib/string/toInt
+ * @see module:gaz/string/toInt
  **/
 exports.toInt               = require('./toInt')
 exports.trim                = mstring.trim
@@ -522,7 +522,7 @@ exports.typecast            = mstring.typecast
 /**
  * Add space between camelCase text.
  * @function
- * @see module:hive-stdlib/string@camelCase
+ * @see module:gaz/string@camelCase
  * @param {String} input input string to un camelcase
  * @param {String} [delimiter=' '] A string to inject between words
  * @example
@@ -535,8 +535,8 @@ exports.unCamelCase         = mstring.unCamelCase
 /**
  * Replaces spaces with underscores, split camelCase text, remove non-word chars, remove accents and convert to lower case.
  * @function
- * @see module:hive-stdlib/string#slugify
- * @see module:hive-stdlib/string#hyphenate
+ * @see module:gaz/string#slugify
+ * @see module:gaz/string#hyphenate
  * @param {String} input The input string to modify
  * @returns {String}
  * @example
@@ -566,7 +566,7 @@ exports.unescapeHtml        = mstring.unescapeHtml
 /**
  * Unescapes unicode character sequences
  * @function
- * @see module:hive-stdlib/string#escapeHtml
+ * @see module:gaz/string#escapeHtml
  * @param {String} An escaped unicode string to decode
  * @returns {String} a full unicode string
  * @example

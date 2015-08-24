@@ -4,7 +4,7 @@ Class
 The `class` module provides a familiar way implement build object orientated design patterns with out any additional modules, add-ons, or language extensions. It is nothing more than a top level function that returns a new function constructor function. The `class` function accepts a single object which is used to build out a prototype as well as implement internal inheritance features.
 
 ```js
-var Class = require('hive-stdlib/class')
+var Class = require('gaz/class')
 var Shape = new Class({
 	constructor: function( h, w ){
 		this.height = h;
@@ -43,9 +43,9 @@ square.area() // 25
 Mixins allow for inheritance through composition where methods and properties are copied from one or many classes to the parent. Typically, Mixin classes do not have a constructor function, have a small, focused set of functionality and can stand on their own. The class libraries provide two common mixin classes, `Options` for providing a simple means of defining overridable configuration with defaults, and `Parent` which enables for a much more straight forward way of calling functions from the parent class.
 
 ```js
-var Class = require('hive-stdlib/class')
-  , Options = require('hive-stdlib/class/options')
-  , Parent = require('hive-stdlib/class/parent');
+var Class = require('gaz/class')
+  , Options = require('gaz/class/options')
+  , Parent = require('gaz/class/parent');
 
 var Shape = new Class({
 	mixin:[ Options, Parent ]
@@ -92,7 +92,7 @@ Mutation is a way to modify the structure of a class at the time of definition. 
  
 
 ```js
-var Class = require('hive-stdlib/class')
+var Class = require('gaz/class')
 Class.defineMutator('double', function( value ){
 	console.log('doubling')
 	return typeof value == 'number' ? value * 2 : null

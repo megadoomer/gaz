@@ -2,7 +2,7 @@
 'use strict';
 /**
  * Collection of url utilities for parseing and creating valid urls
- * @module hive-stdlib/url
+ * @module gaz/url
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires url
@@ -84,15 +84,15 @@ exports.resolve = url.resolve
 /**
  * collection of utilies for dealing with query strings
  * @name qs
- * @namespace module:hive-stdlib/url.qs
- * @memberof module:hive-stdlib/url
+ * @namespace module:gaz/url.qs
+ * @memberof module:gaz/url
  * @property {Object} qs.stringify collection of functions for dealing with query strings
  **/
 exports.qs = {
 	/**
 	 * converts an object into a url friendly querystring. Objects can be nested and contain arrays
 	 * @method stringify
-	 * @memberof module:hive-stdlib/url.qs
+	 * @memberof module:gaz/url.qs
 	 * @example
 	qs.stringify({ a: 'b' });
 	// 'a=b'
@@ -110,7 +110,7 @@ exports.qs = {
 	/**
 	 * converts an object into a url friendly querystring. Objects can be nested and contain arrays
 	 * @method parse
-	 * @memberof module:hive-stdlib/url.qs
+	 * @memberof module:gaz/url.qs
 	 * @param {Object} obj An object to generate a querystring fragement suitable for API usage
 	 * @return {String}
 	 **/
@@ -119,15 +119,15 @@ exports.qs = {
 	/**
 	 * converts invalid url characters into url friendly escape codes
 	 * @method escape
-	 * @memberof module:hive-stdlib/url.qs
+	 * @memberof module:gaz/url.qs
 	 * @param {String} url a raw uri string to encode
 	 * @return {String}
 	 **/
 	,escape: encodeURIComponent
 	/**
-	 * Decodes a string previously encoded by {@link module:hive-stdlib/url.qs#escape|escape}
+	 * Decodes a string previously encoded by {@link module:gaz/url.qs#escape|escape}
 	 * @method unescape
-	 * @memberof module:hive-stdlib/url.qs
+	 * @memberof module:gaz/url.qs
 	 * @param {String} url a url encoded string
 	 * @return {String}
 	 **/
@@ -135,7 +135,7 @@ exports.qs = {
 }
 
 /**
- * @memberof module:hive-stdlib/url.qs
+ * @memberof module:gaz/url.qs
  * @property {Object} legacy Contains original querstring methods from *node core*
  **/
 Object.defineProperty( exports.qs,'legacy',{
@@ -159,7 +159,7 @@ Object.defineProperty( exports.qs,'legacy',{
  * @property {String} host will be used in place of hostname and port
  * @property {String} pathname is treated the same with or without the leading / (slash)
  * @property {String} search will be used in place of query
- * @property {Object} query  will only be used if search is absent. see {@link module:hive-stdlib/url.qs|qs}
+ * @property {Object} query  will only be used if search is absent. see {@link module:gaz/url.qs|qs}
  * @property {Object} search is treated the same with or without the leading ? (question mark)
  * @property {String} hash is treated the same with or without the leading # (pound sign, anchor)
  **/

@@ -2,7 +2,7 @@
 'use strict';
 /**
  * Loads configuration form different data stores before the server starts
- * @module hive-stdlib/exception
+ * @module gaz/exception
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires class
@@ -19,11 +19,11 @@
 /**
  * A subclassible Error class that retains Name, message and stack when subclassed
  * @constructor
- * @alias module:hive-stdlib/exception
+ * @alias module:gaz/exception
  * @extends Error
- * @mixes module:hive-stdlib/class/options
+ * @mixes module:gaz/class/options
  * @param {Object} options Config options for the error instance
- * @example var Exception = require("hive-stdlib/exception");
+ * @example var Exception = require("gaz/exception");
 var FakeExcpetion = new Class({
 	inherits:exception
 	,options:{
@@ -42,7 +42,7 @@ console.log( e instanceof exception ); // true
 console.log( e instanceof FakeExcpetion ); // true
 throw e
  */
-module.exports =  Exception = new Class(/* @lends module:hive-stdlib/exception.prototype */{
+module.exports =  Exception = new Class(/* @lends module:gaz/exception.prototype */{
 	inherits: Error
 	,mixin: [Parent, Options]
 	,options:{
@@ -83,7 +83,7 @@ Object.defineProperties( Exception.prototype,{
  * @readonly
  * @static
  * @name name
- * @memberof module:hive-stdlib/exception
+ * @memberof module:gaz/exception
  * @property {String} name The name of the exception
  */
 	name:{
@@ -94,7 +94,7 @@ Object.defineProperties( Exception.prototype,{
 /**
  * @readonly
  * @name code
- * @memberof module:hive-stdlib/exception
+ * @memberof module:gaz/exception
  * @property {Number} Internal numberic representation of the error
  */
   , code:{
@@ -106,7 +106,7 @@ Object.defineProperties( Exception.prototype,{
   /**
    * @readonly
    * @name type
-   * @memberof module:hive-stdlib/exception
+   * @memberof module:gaz/exception
    * @property {String} type The internal type of the error
    */
   , type:{
@@ -118,7 +118,7 @@ Object.defineProperties( Exception.prototype,{
   /**
    * @readonly
    * @name message
-   * @memberof module:hive-stdlib/exception
+   * @memberof module:gaz/exception
    * @property {String} message The message the error will display when thrown
    */
   , message:{

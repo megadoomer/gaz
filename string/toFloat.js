@@ -4,7 +4,7 @@
 /**
  * Attempts to convert a string to a floating point number
  * @author Eric Satterwhite
- * @module hive-stdlib/string/toFloat
+ * @module gaz/string/toFloat
  * @since 0.1.0
  */
  

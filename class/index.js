@@ -112,11 +112,11 @@ m.double // 20
 ```
 
 
- * @module hive-stdlib/class
+ * @module gaz/class
  * @author Eric Satterwhite
- * @requires hive-stdlib/object
- * @requires hive-stdlib/lang
- * @requires hive-stdlib/typeOf
+ * @requires gaz/object
+ * @requires gaz/lang
+ * @requires gaz/typeOf
  * @tutorial class
  **/
 var hasOwn   = require('../object').hasOwn
@@ -213,7 +213,7 @@ var implement = function(proto){
 /**
  * Object class mixing which provides a standard way of defining configuration options on a class instance
  * @constructor
- * @alias module:hive-stdlib/class
+ * @alias module:gaz/class
  * @param {Object} prototype an Object representing the prototype of the Class
  */
 var prime = function(proto){
@@ -269,7 +269,7 @@ var Class = prime({
  * Registers a Custom Class mutator
  * @static
  * @function defineMutator
- * @memberof module:hive-stdlib/class
+ * @memberof module:gaz/class
  * @param {String} name The name of the mutator
  * @param {Function} fn The function to use as the class mutator
  **/

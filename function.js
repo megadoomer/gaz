@@ -3,11 +3,11 @@
 'use strict';
 /**
  * Standard utilities for dealing with functions
- * @module hive-stdlib/function
+ * @module gaz/function
  * @author Eric satterwhite
  * @since 0.1.0
- * @requires hive-stdlib/lang
- * @requires hive-stdlib/array
+ * @requires gaz/lang
+ * @requires gaz/array
  */
 
 var mfn = require( './function' )
@@ -331,7 +331,7 @@ exports.times         = mfn.times
  * allowing you to adjust arguments, run code before and after, and
  * conditionally execute the original function
  * @function
- * @see module:hive-stdlib/function.partial
+ * @see module:gaz/function.partial
  * @param {Function} fn function to execute 
  * @param {Function} wrapper the function to be passed into `fn`
  * @return {Function}

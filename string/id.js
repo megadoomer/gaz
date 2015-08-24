@@ -3,7 +3,7 @@
 /**
  * Generates a base 36 time based ID
  * @author Eric Satterwhite
- * @module hive-stdlib/string/id
+ * @module gaz/string/id
  * @since 0.1.0
  */
  

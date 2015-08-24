@@ -2,11 +2,11 @@
 'use strict';
 /**
  * Provides a simple and standard way to include class configuration options
- * @module hive-stdlib/class/options
+ * @module gaz/class/options
  * @author Eric Satterwhite
- * @requires hive-stdlib/class
- * @requires hive-stdlib/object/merge
- * @requires hive-stdlib/array/append
+ * @requires gaz/class
+ * @requires gaz/object/merge
+ * @requires gaz/array/append
  * @since 0.1.0
  **/
 var Class  = require('./index')
@@ -24,7 +24,7 @@ function removeOn( name ){
 /**
  * Object class mixing which provides a standard way of defining configuration options on a class instance
  * @constructor
- * @alias module:hive-stdlib/class/options
+ * @alias module:gaz/class/options
  * @param {Object} options and object containing configutation overrides to set on the class instance
  * @example var X = Class({
   mixin: [ Options ]
@@ -42,7 +42,7 @@ var x = new X({
     ,"value2"1
 })
  */
-Options = new Class(/** @lends module:hive-stdlib/class/options.prototype */{
+Options = new Class(/** @lends module:gaz/class/options.prototype */{
     /**
      * merges an object into existing instance options and stores them in an options property
      * @param {Objecdt} Options conifguration options to be merged into defaults

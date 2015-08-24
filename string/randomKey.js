@@ -2,7 +2,7 @@
 /**
  * Generates a random string of a specified length
  * @author Eric Satterwhite
- * @module hive-stdlib/string/randomKey
+ * @module gaz/string/randomKey
  * @since 0.1.0
  **/
 		

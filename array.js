@@ -2,7 +2,7 @@
 'use strict';
 /**
  * Utilities for dealing with and processing arrays
- * @module hive-stdlib/array
+ * @module gaz/array
  * @author Eric Satterwhite
  * @since 0.1.0
  * @requires mout/array

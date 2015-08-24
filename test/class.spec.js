@@ -8,8 +8,8 @@
  * @since 0.0.0
  * @requires assert
  * @requires mocha
- * @requires module:hive-stdlib/class/options
- * @requires module:hive-stdlib/class/parentize
+ * @requires module:gaz/class/options
+ * @requires module:gaz/class/parentize
  */
 
 var assert = require( 'assert' )

@@ -2,23 +2,23 @@
 'use strict';
 /**
  * Standard set of javascript tools, helpers and utilities
- * @module hive-stdlib
+ * @module gaz
  * @author Eric Satterwhite
  * @since 0.1.0
- * @requires hive-stdlib/exception
- * @requires hive-stdlib/class
- * @requires hive-stdlib/number
- * @requires hive-stdlib/iter
- * @requires hive-stdlib/function
- * @requires hive-stdlib/time
- * @requires hive-stdlib/date
- * @requires hive-stdlib/string
- * @requires hive-stdlib/typeOf
- * @requires hive-stdlib/lang
- * @requires hive-stdlib/object
- * @requires hive-stdlib/array
- * @requires hive-stdlib/querystring
- * @requires hive-stdlib/collection
+ * @requires gaz/exception
+ * @requires gaz/class
+ * @requires gaz/number
+ * @requires gaz/iter
+ * @requires gaz/function
+ * @requires gaz/time
+ * @requires gaz/date
+ * @requires gaz/string
+ * @requires gaz/typeOf
+ * @requires gaz/lang
+ * @requires gaz/object
+ * @requires gaz/array
+ * @requires gaz/querystring
+ * @requires gaz/collection
  * @requires mout/math
  */
 
