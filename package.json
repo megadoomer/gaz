@@ -12,7 +12,7 @@
   },
   "bugs": "https://bitbucket.org/megadoomer/gaz/issues",
   "engines": {
-    "node": ">=0.10 <= 0.12"
+    "node": ">=0.10"
   },
   "keywords": [
     "stdlib",
