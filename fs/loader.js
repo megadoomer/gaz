@@ -109,28 +109,29 @@ Loader = new Class({
 
 		debug('loading %s', apps.join(', ') );
 		apps.forEach(function( app ){
-			var appName = that.appName( app );
-			var apppath = path.dirname( require.resolve( app ) );
-			var directoryPath = path.join( apppath, that.options.searchpath );
-			debug('checking directory path %s', directoryPath );
+			var appName = that.appName( app )
+			  , apppath = path.dirname( require.resolve( app ) )
+			  , directoryPath = path.join( apppath, that.options.searchpath )
+			  ;
+
 			
+			debug('checking directory path %s', directoryPath );
 			if( that.paths[ app ] ){
 				 return obj[ appName ] = that.paths[app];
 			}
 
 			if( fs.existsSync( directoryPath ) &&  fs.statSync( directoryPath ).isDirectory() ){
-				that.paths[ app ] = [];
 				var opt = {ignore:path.join(directoryPath, that.options.ignore ,'**' )}
-				var files = that.options.recurse ?
-					glob.sync( path.join( directoryPath, '**', '*' ), opt ) :
-					glob.sync( path.join( directoryPath, '*') , opt )
+				  , files = that.options.recurse ?
+						glob.sync( path.join( directoryPath, '**', '*' ), opt ) :
+						glob.sync( path.join( directoryPath, '*') , opt )
 
 				files
 				.forEach( function( f ){
 					if( ( that.options.filepattern ).test( f ) ){
 						f = path.normalize( f )
 						debug('found fixture %s', f );
-						that.paths[app].push( {name:that.toName(app, f ), path: f }  );
+						( that.paths[app] = that.paths[app] || [] ).push( {name:that.toName(app, f ), path: f }  );
 					}
 				});
 				obj[ appName ] = clone( that.paths[ app ] );
