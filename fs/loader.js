@@ -68,6 +68,7 @@ Loader = new Class({
 		,extensionpattern:/\.[\w]+$/
 		,filepattern: /package\.json$/
 		,recurse: true
+		,ignore: 'node_modules'
 	}
 	,constructor: function( options ){
 		this.paths = {};
@@ -119,7 +120,7 @@ Loader = new Class({
 
 			if( fs.existsSync( directoryPath ) &&  fs.statSync( directoryPath ).isDirectory() ){
 				that.paths[ app ] = [];
-				var opt = {ignore:path.join(directoryPath,'node_modules','**')}
+				var opt = {ignore:path.join(directoryPath, that.options.ignore ,'**' )}
 				var files = that.options.recurse ?
 					glob.sync( path.join( directoryPath, '**', '*' ), opt ) :
 					glob.sync( path.join( directoryPath, '*') , opt )
