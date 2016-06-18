@@ -109,7 +109,7 @@ Loader = new Class({
 
 		debug('loading %s', apps.join(', ') );
 		apps.forEach(function( app ){
-			var appName = that.appName( app )
+			var appName = that.appName( app, apppath )
 			  , apppath = path.dirname( require.resolve( app ) )
 			  , directoryPath = path.join( apppath, that.options.searchpath )
 			  ;
