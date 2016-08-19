@@ -181,7 +181,7 @@ Loader = new Class({
 		return app
 	}
 
-	,remap: function remap( loaded ){
+	,remap: function remap( app, loaded ){
 		return attempt( require.bind( require, loaded.path, loaded.name ) )
 	}
 	/**
