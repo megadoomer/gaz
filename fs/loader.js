@@ -161,7 +161,7 @@ Loader = new Class({
 		for( var key in packages ){
 			this.cache[key] = this.cache[key] || [];
 			if( !this.cache[key].length ){
-				this.cache[key] = compact( packages[key].map( this.remap.bind(this) ) );
+				this.cache[key] = compact( packages[key].map( this.remap.bind(this,key) ) );
 			}
 
 			obj[key] = clone( this.cache[key]);

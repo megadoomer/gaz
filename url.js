@@ -12,7 +12,7 @@
  */
 
 var url         = require( 'url' )        // url
-  , urljoin     = require( 'urljoin' )    // urljoin
+  , urljoin     = require( 'url-join' )    // urljoin
   , qs          = require( 'qs' )         // qs
   , querystring = require( 'querystring' ) // querystring
   ;
