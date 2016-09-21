@@ -1,6 +1,6 @@
 {
   "name": "gaz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Standard set of libraries and modules for megadoomer applications",
   "main": "index.js",
   "repository": {
