@@ -134,7 +134,7 @@ Loader = new Class({
 						( that.paths[app] = that.paths[app] || [] ).push( {name:that.toName(app, f ), path: f }  );
 					}
 				});
-				obj[ appName ] = clone( that.paths[ app ] );
+				obj[ appName ] = toArray( clone( that.paths[ app ] ) );
 			}
 		});
 		return obj;
